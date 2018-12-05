@@ -10,7 +10,7 @@ gem 'fast_jsonapi', git: "https://github.com/Netflix/fast_jsonapi",
     branch: "dev"
 # Pesquisas dentro do Postgresql
 gem 'pg_search'
-
+gem 'webpacker'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.1', '>= 5.2.1.1'
