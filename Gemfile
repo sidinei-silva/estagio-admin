@@ -11,7 +11,8 @@ gem 'fast_jsonapi', git: "https://github.com/Netflix/fast_jsonapi",
 # Pesquisas dentro do Postgresql
 gem 'pg_search'
 gem 'webpacker'
-
+#Para conseguir subir 2 servidores ao mesmo tempo
+gem 'foreman'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.1', '>= 5.2.1.1'
 # Use postgresql as the database for Active Record
