@@ -1,17 +1,13 @@
 <template>
   <v-app id="inspire">
-    <v-navigation-drawer
-            v-model="drawer"
-            fixed
-            app
-    >
-      <v-list dense>
-        <v-list-tile @click="">
+    <v-navigation-drawer v-model="drawer" fixed app>
+      <v-list v-for="item in items_sidebar" dense>
+        <v-list-tile @click=""  :to="{path: item.href}" :key="index">
           <v-list-tile-action>
-            <v-icon>home</v-icon>
+            <v-icon>{{item.icon}}</v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
-            <v-list-tile-title>Home</v-list-tile-title>
+            <v-list-tile-title>{{item.title}}</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
 
@@ -34,7 +30,18 @@
 
     export default {
         data: () => ({
-            drawer: null
+            drawer: null,
+            items_sidebar: [{
+                href: '/',
+                router: true,
+                title: 'Home',
+                icon: 'home',
+            }, {
+                href: 'estagiarios',
+                router: true,
+                title: 'Estagiarios',
+                icon: 'extension',
+            }],
         }),
 
         props: {
