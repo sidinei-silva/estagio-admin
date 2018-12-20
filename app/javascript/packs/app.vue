@@ -10,12 +10,11 @@
 
 <script>
 
-    import Footer from './components/shared/footer';
+    import Footer from './components/shared/footer'
     import Header from './components/shared/header'
 
     export default {
         data: () => ({
-            drawer: null,
             items_sidebar: [{
                 href: '/',
                 router: true,
